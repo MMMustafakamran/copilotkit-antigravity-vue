@@ -150,7 +150,7 @@
     {
      "text": null,
      "clip": "ANTIGRAVITY-vue-01-Quickstart",
-     "loom": "https://www.loom.com/share/b9ed43d149e24b35a7b9ba2db2ad683a"
+     "loom": "https://www.loom.com/share/500d421a2e204a5ca912af00544e6fb5"
     }
    ]
   },
@@ -260,9 +260,7 @@
    "docPath": "prebuilt-components/copilot-threads-drawer",
    "reachable": "sidebar",
    "status": "N/A",
-   "findings": [
-    16
-   ],
+   "findings": [],
    "notes": [
     "Note: needs the CopilotKit Intelligence platform (threads); without it the drawer stays on \"Loading threads...\"."
    ],
@@ -388,20 +386,20 @@
    "child": true,
    "docPath": "generative-ui/mcp-apps",
    "reachable": "sidebar",
-   "status": "❌",
+   "status": "✅",
    "findings": [
     23,
     24
    ],
    "notes": [
-    "Issue: runtime snippet uses an undefined agent and a placeholder MCP url; with those filled in the Excalidraw app frame shows up blank in the chat."
+    "Note: now working: the Excalidraw app renders in the chat. The runtime snippet still leaves `agent` undefined and the MCP url is a placeholder (filled in)."
    ],
    "block": null,
    "links": [
     {
      "text": null,
      "clip": "ANTIGRAVITY-vue-17-McpApps",
-     "loom": null
+     "loom": "https://www.loom.com/share/d2488f468fbb448487a094ec88c02c25"
     }
    ],
    "added": "2026-11-10"
@@ -699,7 +697,7 @@
     {
      "text": null,
      "clip": "ANTIGRAVITY-vue-24-AgenticChatUi",
-     "loom": null
+     "loom": "https://www.loom.com/share/7c074205cc714b5591b2febce22940df"
     }
    ],
    "linkedFrom": "quickstart"

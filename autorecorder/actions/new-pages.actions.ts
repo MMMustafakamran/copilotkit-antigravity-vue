@@ -63,19 +63,6 @@ export const NEW_FINDINGS: Record<string, NewFinding> = {
       'so the weather card comes up with no city name in it',
     ].join('\n'),
   },
-  // FINDINGS.md #23
-  'mcp-apps': {
-    evidence: [
-      { text: 'agents: { default: agent },', caption: 'agent is never defined' },
-      { text: 'https://mcp.example.com/mcp', caption: 'placeholder MCP server url' },
-    ],
-    note: [
-      'runtime snippet registers agents default agent but agent is never defined anywhere',
-      'and the mcp server url is just mcp.example.com/mcp, a placeholder',
-      'filled both in, used the excalidraw mcp server',
-      'agent says it drew the flowchart but the app frame in the chat stays blank',
-    ].join('\n'),
-  },
   // FINDINGS.md #6 (doc-only clip: nothing on the page runs in Vue)
   'agentic-chat-ui': {
     evidence: [
@@ -296,4 +283,23 @@ export const runHeadlessThreadsAction: PageActionHandler = async (page, config, 
   void checkpoint('replay', 'selecting the thread replays its history', () => probeText(page.getByText(config.prompt, { exact: false })));
   if (!replayed) ctx.fail('Selecting the thread did not replay its conversation.');
   await sleep(4000);
+};
+
+/**
+ * MCP Apps (✅ since 2026-11-12): the thing under test is the MCP App frame (Excalidraw) in the chat.
+ * The model often ends its turn with only the tool call and no text, so the take waits for the
+ * frame instead of a text reply (the standard action would call a silent-but-rendered turn a failure).
+ */
+export const runMcpAppsAction: PageActionHandler = async (page, config, _root, ctx) => {
+  await sendPrompt(page, config.prompt, { timeoutMs: 15000 });
+  const frame = page.locator('iframe').last();
+  const shown = await frame.waitFor({ state: 'visible', timeout: 120000 }).then(() => true).catch(() => false);
+  void checkpoint('render', 'the MCP App frame renders in the chat', async () => (shown ? 'iframe visible' : null), { ok: () => shown });
+  if (!shown) {
+    ctx.fail('The MCP App frame never appeared in the chat.');
+    return;
+  }
+  await sleep(8000); // the drawing fills in
+  await glideTo(page, frame, 4000);
+  await sleep(6000); // an optional text reply after the tool call
 };
