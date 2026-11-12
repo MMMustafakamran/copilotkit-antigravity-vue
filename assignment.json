@@ -536,22 +536,16 @@
    "child": true,
    "docPath": "human-in-the-loop/useInterrupt",
    "reachable": "sidebar",
-   "status": "❌",
+   "status": "N/A",
    "findings": [
     42,
     43
    ],
    "notes": [
-    "Issue: the page says Antigravity should use useHumanInTheLoop, but its frontend and backend sections have no code; only a useInterrupt panel and an App.vue importing a MeetingChat component that is never shown."
+    "Note: Not supported for Google Antigravity (the page shows a \"Not supported\" banner)."
    ],
    "block": null,
-   "links": [
-    {
-     "text": null,
-     "clip": "ANTIGRAVITY-vue-19-UseInterrupt",
-     "loom": null
-    }
-   ],
+   "links": [],
    "added": "2026-11-10"
   },
   {
@@ -562,21 +556,15 @@
    "child": true,
    "docPath": "human-in-the-loop/headless",
    "reachable": "sidebar",
-   "status": "❌",
+   "status": "N/A",
    "findings": [
     44
    ],
    "notes": [
-    "Issue: the only code on the page is App.vue importing HeadlessInterruptPanel.vue, which is never shown; the primitives section is text only, so there is nothing to run."
+    "Note: Not supported for Google Antigravity (the page shows a \"Not supported\" banner)."
    ],
    "block": null,
-   "links": [
-    {
-     "text": null,
-     "clip": "ANTIGRAVITY-vue-20-HeadlessInterrupts",
-     "loom": null
-    }
-   ],
+   "links": [],
    "added": "2026-11-10"
   },
   {
@@ -702,5 +690,6 @@
    ],
    "linkedFrom": "quickstart"
   }
- ]
+ ],
+ "quickstartBlocked": "the Vue quickstart is the Antigravity landing page with only Next.js route code; there are no Vue steps, so a reader has no working Vue app to build on"
 }
