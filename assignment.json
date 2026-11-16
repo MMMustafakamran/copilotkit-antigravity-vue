@@ -4,8 +4,8 @@
  "repo": "Antigravity-vue",
  "docBase": "https://docs.copilotkit.ai/vue/google-antigravity/",
  "versions": {
-  "@copilotkit/vue": "1.85.0",
-  "@copilotkit/runtime": "1.85.0",
+  "@copilotkit/vue": "1.88.0",
+  "@copilotkit/runtime": "1.88.0",
   "vue": "3.5.44",
   "vite": "8.3.5",
   "tsx": "4.23.15"
@@ -150,7 +150,8 @@
     {
      "text": null,
      "clip": "ANTIGRAVITY-vue-01-Quickstart",
-     "loom": "https://www.loom.com/share/f165f2c26f804ef4981f68ef04a26820"
+     "loom": "https://www.loom.com/share/ece5ab7227514258bd39c35816eab573",
+     "filmed": "2026-11-16"
     }
    ]
   },
@@ -308,7 +309,8 @@
     {
      "text": null,
      "clip": "ANTIGRAVITY-vue-02-FrontendTools",
-     "loom": "https://www.loom.com/share/d719fa0afe9e49edae1e215c41fea27d"
+     "loom": "https://www.loom.com/share/d719fa0afe9e49edae1e215c41fea27d",
+     "filmed": "2026-11-09"
     }
    ]
   },
@@ -399,7 +401,8 @@
     {
      "text": null,
      "clip": "ANTIGRAVITY-vue-17-McpApps",
-     "loom": "https://www.loom.com/share/d2488f468fbb448487a094ec88c02c25"
+     "loom": "https://www.loom.com/share/d2488f468fbb448487a094ec88c02c25",
+     "filmed": "2026-11-12"
     }
    ],
    "added": "2026-11-10"
@@ -697,7 +700,8 @@
     {
      "text": null,
      "clip": "ANTIGRAVITY-vue-24-AgenticChatUi",
-     "loom": "https://www.loom.com/share/7c074205cc714b5591b2febce22940df"
+     "loom": "https://www.loom.com/share/7c074205cc714b5591b2febce22940df",
+     "filmed": "2026-11-12"
     }
    ],
    "linkedFrom": "quickstart"
