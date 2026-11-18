@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # HARNESS: starts every Antigravity-vue server on its harness ports (REPOS.md: never 3000/8000).
 #   8141 own Antigravity quickstart agent (backend/main.py; React quickstart: 8000)
-#   8140 runtime server.antigravity.ts (HttpAgent -> :8141); the rendered quickstart has no Vue
-#        steps (FINDINGS.md #9). Doc: 8200.
+#   8140 runtime server.antigravity.ts (HttpAgent -> :8141); the Vue quickstart registers only a BuiltInAgent,
+#        never an Antigravity agent (FINDINGS.md #9). Doc: 8200.
 #   5140 Vite (doc: 5173)
 # Override the agent URL with AGENT_URL. Key: backend/.env (see .env.example). The backend uses
 # --env-file because the doc's .env is never loaded (Antigravity-react FINDINGS.md #1).
