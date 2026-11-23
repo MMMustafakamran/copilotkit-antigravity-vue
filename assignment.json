@@ -4,9 +4,9 @@
  "repo": "Antigravity-vue",
  "docBase": "https://docs.copilotkit.ai/vue/google-antigravity/",
  "versions": {
-  "@copilotkit/vue": "1.89.0",
-  "@copilotkit/runtime": "1.89.0",
-  "vue": "3.5.45",
+  "@copilotkit/vue": "1.90.0",
+  "@copilotkit/runtime": "1.90.0",
+  "vue": "3.5.46",
   "vite": "8.3.8",
   "tsx": "4.23.15"
  },
@@ -143,15 +143,15 @@
     9
    ],
    "notes": [
-    "Issue: the Vue quickstart is the generic Vue + BuiltInAgent page; the only runtime registers CopilotKit's own OpenAI agent and nothing connects an Antigravity agent (no backend, no ag-ui-antigravity, no HttpAgent). Its callout tells agent owners to use their framework's quickstart, which is this page."
+    "Issue: only CopilotKit's BuiltInAgent is wired; no step connects an Antigravity agent."
    ],
    "block": null,
    "links": [
     {
      "text": null,
      "clip": "ANTIGRAVITY-vue-01-Quickstart",
-     "loom": "https://www.loom.com/share/c85d6ea25c244bd9930273347eaf48ea",
-     "filmed": "2026-11-18"
+     "loom": "https://www.loom.com/share/e7f4ebbbc3ef446ebcd00b93adfcbcf9",
+     "filmed": "2026-11-23"
     }
    ]
   },
@@ -169,15 +169,15 @@
     11
    ],
    "notes": [
-    "Note: uses agent-id my-agent which the quickstart never registers, had to add it in the runtime."
+    "Note: agent-id my-agent is never registered by the quickstart; add it in the runtime."
    ],
    "block": null,
    "links": [
     {
      "text": null,
      "clip": "ANTIGRAVITY-vue-06-PrebuiltComponents",
-     "loom": "https://www.loom.com/share/cbc2e21d25c843ea8153d33f291963c7",
-     "filmed": "2026-11-18"
+     "loom": "https://www.loom.com/share/fe8a834ea78943eda11abaccea4b79dd",
+     "filmed": "2026-11-23"
     }
    ],
    "added": "2026-11-10"
@@ -200,8 +200,8 @@
     {
      "text": null,
      "clip": "ANTIGRAVITY-vue-07-Slots",
-     "loom": "https://www.loom.com/share/344664348d194dddbfc086e4e2a0e03c",
-     "filmed": "2026-11-18"
+     "loom": "https://www.loom.com/share/87619bc890624665881b027ca7391e5b",
+     "filmed": "2026-11-23"
     }
    ],
    "added": "2026-11-10"
@@ -224,8 +224,8 @@
     {
      "text": null,
      "clip": "ANTIGRAVITY-vue-08-HeadlessUi",
-     "loom": "https://www.loom.com/share/791e94e0ad7842e3970494c802cd2186",
-     "filmed": "2026-11-18"
+     "loom": "https://www.loom.com/share/96496c7944e64b20853dc7f5351a7e8a",
+     "filmed": "2026-11-23"
     }
    ],
    "added": "2026-11-10"
@@ -243,10 +243,17 @@
     48
    ],
    "notes": [
-    "Note: the page shows no runtime code for Intelligence and agent-id=\"support\" is never registered (added in the harness)."
+    "Note: agent-id=\"support\" is never registered on the page."
    ],
    "block": null,
-   "links": [],
+   "links": [
+    {
+     "text": "Threads Drawer - Vue",
+     "clip": "ANTIGRAVITY-vue-10-ThreadsDrawer",
+     "loom": "https://www.loom.com/share/06b3c9f68b9f438f85a0b1280790808c",
+     "filmed": "2026-11-23"
+    }
+   ],
    "added": "2026-11-10"
   },
   {
@@ -263,14 +270,14 @@
     49
    ],
    "notes": [
-    "Note: server.ts uses agent and verifyAppSession without defining them and registers only default, while the page uses agent-id=\"my-agent\" (filled in by the harness)."
+    "Note: server.ts leaves agent and verifyAppSession undefined; my-agent never registered."
    ],
    "block": null,
    "links": [
     {
      "clip": "ANTIGRAVITY-vue-11-HeadlessThreads",
-     "loom": "https://www.loom.com/share/d54639406ff14386951e2e707e596b57",
-     "filmed": "2026-11-18"
+     "loom": "https://www.loom.com/share/2992ef25e5e848be8e1672dbfb3b51e5",
+     "filmed": "2026-11-23"
     }
    ],
    "added": "2026-11-10"
@@ -289,15 +296,15 @@
     5
    ],
    "notes": [
-    "Note: `runtime-url=\"/api/copilotkit\"` 404s on Vite; must be `http://localhost:8200/api/copilotkit`"
+    "Note: runtime-url=\"/api/copilotkit\" 404s on Vite; use the full runtime URL."
    ],
    "block": null,
    "links": [
     {
      "text": null,
      "clip": "ANTIGRAVITY-vue-02-FrontendTools",
-     "loom": "https://www.loom.com/share/6f9e91d5ab7a4de3af49cc423b86fb08",
-     "filmed": "2026-11-18"
+     "loom": "https://www.loom.com/share/6fdcef0b8cb44ff99e2c28ee92f7e29a",
+     "filmed": "2026-11-23"
     }
    ]
   },
@@ -319,8 +326,8 @@
     {
      "text": null,
      "clip": "ANTIGRAVITY-vue-12-ToolBased",
-     "loom": "https://www.loom.com/share/610eaad68c6444928921360d9b24a2c3",
-     "filmed": "2026-11-18"
+     "loom": "https://www.loom.com/share/a972f5cab71448598621832fb3f8ed69",
+     "filmed": "2026-11-23"
     }
    ],
    "added": "2026-11-10"
@@ -333,21 +340,21 @@
    "child": true,
    "docPath": "generative-ui/tool-rendering",
    "reachable": "sidebar",
-   "status": "❌",
+   "status": "✅",
    "findings": [
     19,
     20
    ],
    "notes": [
-    "Issue: backend snippet uses build(), SYSTEM_PROMPT and 3 tools that are never shown; needed showcase code to run. Card also reads city but the backend tool arg is location."
+    "Note: build() and 3 tools aren't shown; card's city heading stays empty."
    ],
    "block": null,
    "links": [
     {
      "text": null,
      "clip": "ANTIGRAVITY-vue-13-ToolRendering",
-     "loom": "https://www.loom.com/share/3b24d5d7be7d450aaa6978e0e5347d4a",
-     "filmed": "2026-11-18"
+     "loom": "https://www.loom.com/share/051de1bf61ed409ea49e5f1ed67956c2",
+     "filmed": "2026-11-23"
     }
    ],
    "added": "2026-11-10"
@@ -366,15 +373,15 @@
     24
    ],
    "notes": [
-    "Note: now working: the Excalidraw app renders in the chat. The runtime snippet still leaves `agent` undefined and the MCP url is a placeholder (filled in)."
+    "Note: runtime snippet leaves agent undefined; MCP url is a placeholder."
    ],
    "block": null,
    "links": [
     {
      "text": null,
-     "clip": "ANTIGRAVITY-vue-17-McpApps",
-     "loom": "https://www.loom.com/share/d2488f468fbb448487a094ec88c02c25",
-     "filmed": "2026-11-12"
+     "clip": "ANTIGRAVITY-vue-14-McpApps",
+     "loom": "https://www.loom.com/share/f9519562dc26406cb9859b6338c8080b",
+     "filmed": "2026-11-23"
     }
    ],
    "added": "2026-11-10"
@@ -395,15 +402,15 @@
     51
    ],
    "notes": [
-    "Note: build() in the agent snippet is never defined. Notes list updates live from the agent."
+    "Note: build() in the agent snippet is never defined."
    ],
    "block": null,
    "links": [
     {
      "text": null,
      "clip": "ANTIGRAVITY-vue-03-SharedState",
-     "loom": "https://www.loom.com/share/1ceb16cb2f1e4515893f9d91e3143e33",
-     "filmed": "2026-11-18"
+     "loom": "https://www.loom.com/share/d806246bfa894b6781ac894513bf3beb",
+     "filmed": "2026-11-23"
     }
    ],
    "added": "2026-11-10"
@@ -427,8 +434,8 @@
     {
      "text": null,
      "clip": "ANTIGRAVITY-vue-04-SharedStateRendering",
-     "loom": "https://www.loom.com/share/ee7e86551ef241658f981810ba7c8d29",
-     "filmed": "2026-11-18"
+     "loom": "https://www.loom.com/share/f27dd8407f8e43dbbc65ae4968eeb183",
+     "filmed": "2026-11-23"
     }
    ],
    "added": "2026-11-10"
@@ -441,22 +448,22 @@
    "child": true,
    "docPath": "shared-state/agent-readonly",
    "reachable": "sidebar",
-   "status": "❌",
+   "status": "✅",
    "findings": [
     35,
     36,
     51
    ],
    "notes": [
-    "Issue: the agent never sees the useAgentContext value (asked which workspace, it answered C:/srv/agents/w1, not northstar). The Antigravity adapter needs experimental_app_context=True on the agent, which the page never mentions."
+    "Note: needs experimental_app_context=True and a system prompt telling the model to call the context tool."
    ],
    "block": null,
    "links": [
     {
      "text": null,
      "clip": "ANTIGRAVITY-vue-05-SharedStateReadonly",
-     "loom": "https://www.loom.com/share/ff4fbfdb01c144a5b12216692ecc13f7",
-     "filmed": "2026-11-18"
+     "loom": "https://www.loom.com/share/7895cbb562d24e38b3e21cb290c9fba9",
+     "filmed": "2026-11-23"
     }
    ],
    "added": "2026-11-10"
@@ -475,15 +482,15 @@
     40
    ],
    "notes": [
-    "Note: agents._common is never shown, and the agent prompt names book_call while the Vue tool is schedule_meeting. Works as published otherwise."
+    "Note: agents._common never shown; prompt says book_call but the tool is schedule_meeting."
    ],
    "block": null,
    "links": [
     {
      "text": null,
      "clip": "ANTIGRAVITY-vue-15-HumanInTheLoop",
-     "loom": "https://www.loom.com/share/5b2fdf915c1849fb9cb024bb0b6fc715",
-     "filmed": "2026-11-18"
+     "loom": "https://www.loom.com/share/f7d3a0d9c23e40b881baf536540f2d7e",
+     "filmed": "2026-11-23"
     }
    ],
    "added": "2026-11-10"
@@ -501,15 +508,15 @@
     43
    ],
    "notes": [
-    "Note: now working (doc updated 2026-11-18). runtime-url=\"/api/copilotkit\" 404s on Vite and the backend section has no code; the quickstart Antigravity agent calls the frontend tool as is."
+    "Note: now working; runtime-url=\"/api/copilotkit\" 404s on Vite, use the full URL."
    ],
    "block": null,
    "links": [
     {
      "text": null,
      "clip": "ANTIGRAVITY-vue-16-UseInterrupt",
-     "loom": "https://www.loom.com/share/fe47c3db1f584a1d9e63cfe37843ef0c",
-     "filmed": "2026-11-18"
+     "loom": "https://www.loom.com/share/64445ac7158b43d892cf5bd3e931b4cb",
+     "filmed": "2026-11-23"
     }
    ],
    "added": "2026-11-10"
@@ -527,15 +534,15 @@
     43
    ],
    "notes": [
-    "Note: now working (doc updated 2026-11-18). runtime-url=\"/api/copilotkit\" 404s on Vite and the backend section has no code; the quickstart Antigravity agent calls the frontend tool as is."
+    "Note: now working; runtime-url=\"/api/copilotkit\" 404s on Vite, use the full URL."
    ],
    "block": null,
    "links": [
     {
      "text": null,
      "clip": "ANTIGRAVITY-vue-17-HeadlessInterrupts",
-     "loom": "https://www.loom.com/share/e75fbf6518cb4b949f0b418e587aa49f",
-     "filmed": "2026-11-18"
+     "loom": "https://www.loom.com/share/63c6483ed8964094a9c791b9a0ca6e2b",
+     "filmed": "2026-11-23"
     }
    ],
    "added": "2026-11-10"
@@ -553,14 +560,15 @@
     45
    ],
    "notes": [
-    "Note: the page shows no backend, so the prompt has to ask for approve_governed_action. The approval card works."
+    "Note: approved action never runs; the page gives no backend with send_email."
    ],
    "block": null,
    "links": [
     {
      "text": null,
-     "clip": "ANTIGRAVITY-vue-21-GovernedActions",
-     "loom": null
+     "clip": "ANTIGRAVITY-vue-18-GovernedActions",
+     "loom": "https://www.loom.com/share/8c5b7d40172944958f6b39795add8faf",
+     "filmed": "2026-11-23"
     }
    ],
    "added": "2026-11-10"
@@ -573,20 +581,20 @@
    "child": false,
    "docPath": "webmcp",
    "reachable": "sidebar",
-   "status": "❌",
+   "status": "✅",
    "findings": [
     46
    ],
    "notes": [
-    "Issue: OrderSearch.vue calls searchOrders(), which the page never defines, and the agent never replies when the tool is used."
+    "Note: searchOrders() is never defined (your own API)."
    ],
    "block": null,
    "links": [
     {
-     "text": null,
+     "text": "WebMCP - Vue",
      "clip": "ANTIGRAVITY-vue-19-WebMcp",
-     "loom": "https://www.loom.com/share/2d44f755c12e48f2bee10019eae08f29",
-     "filmed": "2026-11-18"
+     "loom": "https://www.loom.com/share/c5a8174b74244f87857ec0ae370b0e4f",
+     "filmed": "2026-11-23"
     }
    ],
    "added": "2026-11-10"
@@ -605,15 +613,15 @@
     51
    ],
    "notes": [
-    "Issue: the delegation-log frontend section has no code, and subagents.py needs httpx (not in the install step) and agents._common, which is never shown."
+    "Issue: delegation log has no Vue code, only React."
    ],
    "block": null,
    "links": [
     {
      "text": null,
      "clip": "ANTIGRAVITY-vue-20-SubAgents",
-     "loom": "https://www.loom.com/share/10407c193274425bb0fbe5194a9e46a8",
-     "filmed": "2026-11-18"
+     "loom": "https://www.loom.com/share/fa0f97f96b6d4eeeb1c00804b4233561",
+     "filmed": "2026-11-23"
     }
    ],
    "added": "2026-11-10"
@@ -636,12 +644,12 @@
     {
      "text": null,
      "clip": "ANTIGRAVITY-vue-09-Inspector",
-     "loom": "https://www.loom.com/share/1b90df9e5e284826a95f9148e65bc618",
-     "filmed": "2026-11-18"
+     "loom": "https://www.loom.com/share/246f15df9154429086f95414be62da86",
+     "filmed": "2026-11-23"
     }
    ],
    "added": "2026-11-10"
   }
  ],
- "quickstartBlocked": "the Vue quickstart is the generic Vue page with a BuiltInAgent (OpenAI) runtime; nothing on it connects an Antigravity agent, so a reader has no Vue app on Antigravity to build on"
+ "quickstartBlocked": "The Vue quickstart only wires BuiltInAgent; no step connects an Antigravity agent."
 }
