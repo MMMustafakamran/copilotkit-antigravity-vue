@@ -150,8 +150,8 @@
     {
      "text": null,
      "clip": "ANTIGRAVITY-vue-01-Quickstart",
-     "loom": "https://www.loom.com/share/e7f4ebbbc3ef446ebcd00b93adfcbcf9",
-     "filmed": "2026-11-23"
+     "loom": "https://www.loom.com/share/78884d85a3074ab5a5a67ae414857521",
+     "filmed": "2026-11-24"
     }
    ]
   },
@@ -174,8 +174,8 @@
     {
      "text": null,
      "clip": "ANTIGRAVITY-vue-06-PrebuiltComponents",
-     "loom": "https://www.loom.com/share/fe8a834ea78943eda11abaccea4b79dd",
-     "filmed": "2026-11-23"
+     "loom": "https://www.loom.com/share/e4ce3226b5ed411886e6494ae2698e27",
+     "filmed": "2026-11-24"
     }
    ],
    "added": "2026-11-10"
@@ -198,8 +198,8 @@
     {
      "text": null,
      "clip": "ANTIGRAVITY-vue-07-Slots",
-     "loom": "https://www.loom.com/share/87619bc890624665881b027ca7391e5b",
-     "filmed": "2026-11-23"
+     "loom": "https://www.loom.com/share/42f2096ae400488e9b95918351594c12",
+     "filmed": "2026-11-24"
     }
    ],
    "added": "2026-11-10"
@@ -222,8 +222,8 @@
     {
      "text": null,
      "clip": "ANTIGRAVITY-vue-08-HeadlessUi",
-     "loom": "https://www.loom.com/share/96496c7944e64b20853dc7f5351a7e8a",
-     "filmed": "2026-11-23"
+     "loom": "https://www.loom.com/share/7a57785e5ad14a09a304411957d1180a",
+     "filmed": "2026-11-24"
     }
    ],
    "added": "2026-11-10"
@@ -246,8 +246,8 @@
     {
      "text": "Threads Drawer - Vue",
      "clip": "ANTIGRAVITY-vue-10-ThreadsDrawer",
-     "loom": "https://www.loom.com/share/06b3c9f68b9f438f85a0b1280790808c",
-     "filmed": "2026-11-23"
+     "loom": "https://www.loom.com/share/15ea8d9677fe4ecd8979f49fd097bbf5",
+     "filmed": "2026-11-24"
     }
    ],
    "added": "2026-11-10"
@@ -270,8 +270,8 @@
    "links": [
     {
      "clip": "ANTIGRAVITY-vue-11-HeadlessThreads",
-     "loom": "https://www.loom.com/share/2992ef25e5e848be8e1672dbfb3b51e5",
-     "filmed": "2026-11-23"
+     "loom": "https://www.loom.com/share/d6cf84822d064292bab1545617f69435",
+     "filmed": "2026-11-24"
     }
    ],
    "added": "2026-11-10"
@@ -297,8 +297,8 @@
     {
      "text": null,
      "clip": "ANTIGRAVITY-vue-02-FrontendTools",
-     "loom": "https://www.loom.com/share/6fdcef0b8cb44ff99e2c28ee92f7e29a",
-     "filmed": "2026-11-23"
+     "loom": "https://www.loom.com/share/6ffef276d65e4815892b9e24cf514dd7",
+     "filmed": "2026-11-24"
     }
    ]
   },
@@ -320,8 +320,8 @@
     {
      "text": null,
      "clip": "ANTIGRAVITY-vue-12-ToolBased",
-     "loom": "https://www.loom.com/share/a972f5cab71448598621832fb3f8ed69",
-     "filmed": "2026-11-23"
+     "loom": "https://www.loom.com/share/af7f4d4de9a141f3b1b244ddddeaf743",
+     "filmed": "2026-11-24"
     }
    ],
    "added": "2026-11-10"
@@ -347,8 +347,8 @@
     {
      "text": null,
      "clip": "ANTIGRAVITY-vue-13-ToolRendering",
-     "loom": "https://www.loom.com/share/051de1bf61ed409ea49e5f1ed67956c2",
-     "filmed": "2026-11-23"
+     "loom": "https://www.loom.com/share/de04f4150c834b6c8e4927db1a72c4a1",
+     "filmed": "2026-11-24"
     }
    ],
    "added": "2026-11-10"
@@ -372,8 +372,8 @@
     {
      "text": null,
      "clip": "ANTIGRAVITY-vue-14-McpApps",
-     "loom": "https://www.loom.com/share/f9519562dc26406cb9859b6338c8080b",
-     "filmed": "2026-11-23"
+     "loom": "https://www.loom.com/share/c729646581854c74b819d35043f7a2f8",
+     "filmed": "2026-11-24"
     }
    ],
    "added": "2026-11-10"
@@ -399,8 +399,8 @@
     {
      "text": null,
      "clip": "ANTIGRAVITY-vue-03-SharedState",
-     "loom": "https://www.loom.com/share/d806246bfa894b6781ac894513bf3beb",
-     "filmed": "2026-11-23"
+     "loom": "https://www.loom.com/share/10d9e1419b0144bf81b412efbe6a35c5",
+     "filmed": "2026-11-24"
     }
    ],
    "added": "2026-11-10"
@@ -413,19 +413,21 @@
    "child": true,
    "docPath": "shared-state/rendering-in-app",
    "reachable": "sidebar",
-   "status": "✅",
+   "status": "❌",
    "findings": [
     30,
     51
    ],
-   "notes": [],
+   "notes": [
+    "Issue: agent can't mark the item done, page gives no backend tool that writes items."
+   ],
    "block": null,
    "links": [
     {
      "text": null,
      "clip": "ANTIGRAVITY-vue-04-SharedStateRendering",
-     "loom": "https://www.loom.com/share/f27dd8407f8e43dbbc65ae4968eeb183",
-     "filmed": "2026-11-23"
+     "loom": "https://www.loom.com/share/d3cf07ae1a974d6ba96da07f11059401",
+     "filmed": "2026-11-24"
     }
    ],
    "added": "2026-11-10"
@@ -452,8 +454,8 @@
     {
      "text": null,
      "clip": "ANTIGRAVITY-vue-05-SharedStateReadonly",
-     "loom": "https://www.loom.com/share/7895cbb562d24e38b3e21cb290c9fba9",
-     "filmed": "2026-11-23"
+     "loom": "https://www.loom.com/share/7d315159bfa14fe38bf01938bc5ec46d",
+     "filmed": "2026-11-24"
     }
    ],
    "added": "2026-11-10"
@@ -477,8 +479,8 @@
     {
      "text": null,
      "clip": "ANTIGRAVITY-vue-15-HumanInTheLoop",
-     "loom": "https://www.loom.com/share/f7d3a0d9c23e40b881baf536540f2d7e",
-     "filmed": "2026-11-23"
+     "loom": "https://www.loom.com/share/a581aa0391f048959bb210dea418c7be",
+     "filmed": "2026-11-24"
     }
    ],
    "added": "2026-11-10"
@@ -503,8 +505,8 @@
     {
      "text": null,
      "clip": "ANTIGRAVITY-vue-16-UseInterrupt",
-     "loom": "https://www.loom.com/share/64445ac7158b43d892cf5bd3e931b4cb",
-     "filmed": "2026-11-23"
+     "loom": "https://www.loom.com/share/ac1dd4ad11a8466e8a7cf0078d2127b1",
+     "filmed": "2026-11-24"
     }
    ],
    "added": "2026-11-10"
@@ -529,8 +531,8 @@
     {
      "text": null,
      "clip": "ANTIGRAVITY-vue-17-HeadlessInterrupts",
-     "loom": "https://www.loom.com/share/63c6483ed8964094a9c791b9a0ca6e2b",
-     "filmed": "2026-11-23"
+     "loom": "https://www.loom.com/share/6eff1d8fe6d14acdae40e4f4e7b53957",
+     "filmed": "2026-11-24"
     }
    ],
    "added": "2026-11-10"
@@ -555,8 +557,8 @@
     {
      "text": null,
      "clip": "ANTIGRAVITY-vue-18-GovernedActions",
-     "loom": "https://www.loom.com/share/8c5b7d40172944958f6b39795add8faf",
-     "filmed": "2026-11-23"
+     "loom": "https://www.loom.com/share/c47dcf87d6354ea989b43e5aea420ed6",
+     "filmed": "2026-11-24"
     }
    ],
    "added": "2026-11-10"
@@ -579,8 +581,8 @@
     {
      "text": "WebMCP - Vue",
      "clip": "ANTIGRAVITY-vue-19-WebMcp",
-     "loom": "https://www.loom.com/share/c5a8174b74244f87857ec0ae370b0e4f",
-     "filmed": "2026-11-23"
+     "loom": "https://www.loom.com/share/0269ddf9894d46b4a716714e390dafe2",
+     "filmed": "2026-11-24"
     }
    ],
    "added": "2026-11-10"
@@ -606,8 +608,8 @@
     {
      "text": null,
      "clip": "ANTIGRAVITY-vue-20-SubAgents",
-     "loom": "https://www.loom.com/share/fa0f97f96b6d4eeeb1c00804b4233561",
-     "filmed": "2026-11-23"
+     "loom": "https://www.loom.com/share/29083e2b500142b189c647a948af573c",
+     "filmed": "2026-11-24"
     }
    ],
    "added": "2026-11-10"
